@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light " href="{% url 'home' %}">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ml-auto  ">
+              <li class="nav-item">
+              
+                <a href="/products">
+                  <span class="nav-link active text-light"> allproduct </span>
+                </a>
+              </li> 
+              <li class="nav-item">
+                  
+               
+                  <a class="nav-link active text-light" href="{% url 'myorder' %}">MyOrder</a>
+                </li>  
+              <li class="nav-item">
+                  
+                <a href="/cart">
+                  <span class="nav-link active text-light"> Cart {{count}} </span>
+                </a>
+                </li>    
+                <!-- <li class="nav-item">
+                  <a href="/checkout">
+                      <span class="nav-link active text-light"> checkout </span>
+                    </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{% url 'signout' %}">Signout</a>
+              </li>            
+              <!-- <li class="nav-item"><a class="nav-item" href="#">Something else here</a></li> -->
+            </ul>
+          </div>
+      </div>
+      </nav>
+      </div>
+    <center>
+        payment Successful
+    </center>
+
+</body>
+</html>
